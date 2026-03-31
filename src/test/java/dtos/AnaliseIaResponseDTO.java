@@ -1,13 +1,12 @@
 package dtos;
 
-import enums.Prioridade;
 import enums.Setor;
 
 import java.time.LocalDateTime;
 
-public record AnaliseIAResponseDTO(
+public record AnaliseIaResponseDTO(
         Long chamadoId,
-        Prioridade prioridadeSugerida,
+        enums.Prioridade prioridadeSugerida,
         Setor setorSugerido,
         String resumo,
         LocalDateTime analisadoEm

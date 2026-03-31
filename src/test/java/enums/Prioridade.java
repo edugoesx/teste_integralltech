@@ -1,5 +1,5 @@
 package enums;
 
-public class Prioridade {
-    String BAIXA, MEDIA, ALTA, CRITICA;
+public enum Prioridade {
+    BAIXA, MEDIA, ALTA, CRITICA
 }
