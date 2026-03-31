@@ -1,7 +1,8 @@
-package dtos;
+package com.eduardo.testeintegral.dtos;
 
-import enums.Prioridade;
-import enums.Setor;
+
+import com.eduardo.testeintegral.enums.Prioridade;
+import com.eduardo.testeintegral.enums.Setor;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

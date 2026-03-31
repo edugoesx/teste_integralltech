@@ -1,12 +1,13 @@
-package dtos;
+package com.eduardo.testeintegral.dtos;
 
-import enums.Setor;
+import com.eduardo.testeintegral.enums.Prioridade;
+import com.eduardo.testeintegral.enums.Setor;
 
 import java.time.LocalDateTime;
 
 public record AnaliseIaResponseDTO(
         Long chamadoId,
-        enums.Prioridade prioridadeSugerida,
+        Prioridade prioridadeSugerida,
         Setor setorSugerido,
         String resumo,
         LocalDateTime analisadoEm

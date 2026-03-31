@@ -1,11 +1,12 @@
-package services;
+package com.eduardo.testeintegral.services;
 
-import dtos.ChamadoRequestDTO;
-import enums.Setor;
-import enums.Status;
-import models.Chamado;
+import com.eduardo.testeintegral.dtos.ChamadoRequestDTO;
+import com.eduardo.testeintegral.enums.Setor;
+import com.eduardo.testeintegral.enums.Status;
+import com.eduardo.testeintegral.models.Chamado;
+import com.eduardo.testeintegral.repositories.ChamadoRepository;
 import org.springframework.stereotype.Service;
-import repositories.ChamadoRepository;
+
 
 import java.time.LocalDateTime;
 import java.util.List;

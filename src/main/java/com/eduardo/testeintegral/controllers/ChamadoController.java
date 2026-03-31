@@ -1,15 +1,15 @@
-package controllers;
+package com.eduardo.testeintegral.controllers;
 
-import dtos.AnaliseIaResponseDTO;
-import dtos.ChamadoRequestDTO;
-import enums.Setor;
+import com.eduardo.testeintegral.dtos.AnaliseIaResponseDTO;
+import com.eduardo.testeintegral.dtos.ChamadoRequestDTO;
+import com.eduardo.testeintegral.enums.Setor;
+import com.eduardo.testeintegral.models.Chamado;
 import jakarta.validation.Valid;
-import models.Chamado;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import services.ChamadoService;
-import services.IaIntegrationService;
+import com.eduardo.testeintegral.services.ChamadoService;
+import com.eduardo.testeintegral.services.IaIntegrationService;
 
 import java.util.List;
 

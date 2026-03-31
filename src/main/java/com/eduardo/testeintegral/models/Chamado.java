@@ -1,8 +1,9 @@
-package models;
+package com.eduardo.testeintegral.models;
 
-import enums.Prioridade;
-import enums.Setor;
-import enums.Status;
+
+import com.eduardo.testeintegral.enums.Prioridade;
+import com.eduardo.testeintegral.enums.Setor;
+import com.eduardo.testeintegral.enums.Status;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
