@@ -30,17 +30,17 @@ Para rodar este projeto, você precisará ter instalado:
  ## Endpoints da API
  
  Abaixo estão as rotas disponíveis no sistema:
-  POST /api/chamados - Cria um novo chamado.
-  GET /api/chamados - Lista todos os chamados.
-  GET /api/chamados/{id} - Busca um chamado específico pelo ID.
-  GET /api/chamados/setor/{setor} - Lista chamados filtrados por setor (TI, MANUTENCAO, RH, FINANCEIRO).
-  PUT /api/chamados/{id} - Atualiza dados de um chamado.
-  DELETE /api/chamados/{id} - Cancela um chamado (Soft Delete).
-  POST /api/chamados/{id}/analisar - Envia o chamado para triagem e sugestão da Inteligência Artificial.
+* POST /api/chamados - Cria um novo chamado.
+* GET /api/chamados - Lista todos os chamados.
+* GET /api/chamados/{id} - Busca um chamado específico pelo ID.
+* GET /api/chamados/setor/{setor} - Lista chamados filtrados por setor (TI, MANUTENCAO, RH, FINANCEIRO).
+* PUT /api/chamados/{id} - Atualiza dados de um chamado.
+* DELETE /api/chamados/{id} - Cancela um chamado (Soft Delete).
+* POST /api/chamados/{id}/analisar - Envia o chamado para triagem e sugestão da Inteligência Artificial.
 
 4. **Como testar a Integração com IA**
 
-Crie um chamado via POST /api/chamados com um título e descrição (ex: "Computador não liga").
-Copie o id gerado na resposta.
-Faça uma requisição POST /api/chamados/{id}/analisar (deixe o corpo/body vazio).
-A IA retornará um JSON sugerindo a prioridade, o setor responsável e um resumo do problema .
+* Crie um chamado via POST /api/chamados com um título e descrição (ex: "Computador não liga").
+* Copie o id gerado na resposta.
+* Faça uma requisição POST /api/chamados/{id}/analisar (deixe o corpo/body vazio).
+* A IA retornará um JSON sugerindo a prioridade, o setor responsável e um resumo do problema .
