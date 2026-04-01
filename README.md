@@ -28,6 +28,7 @@ Para rodar este projeto, você precisará ter instalado:
   A API estará disponível em http://localhost:8080
 
 4. **Rodando o Front-end (React)**
+   
 Com o back-end já em execução, abra um **novo terminal**:
 * Navegue até a pasta do front-end (ex: `cd frontend-chamados`).
 * Instale as dependências com o comando npm install.
