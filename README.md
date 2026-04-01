@@ -39,7 +39,7 @@ Para rodar este projeto, você precisará ter instalado:
   POST /api/chamados/{id}/analisar - Envia o chamado para triagem e sugestão da Inteligência Artificial.
 
 4. **Como testar a Integração com IA**
-5. 
+
 Crie um chamado via POST /api/chamados com um título e descrição (ex: "Computador não liga").
 Copie o id gerado na resposta.
 Faça uma requisição POST /api/chamados/{id}/analisar (deixe o corpo/body vazio).
