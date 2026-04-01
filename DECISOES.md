@@ -12,7 +12,11 @@ Decidi implementar DTOs (`ChamadoRequestDTO`, `AnaliseIaResponseDTO`) para não 
 Para a análise dos chamados, realizei a integração real consumindo a API da Groq (modelo Llama 3) via `RestTemplate`.
 A principal decisão aqui foi o **Prompt Engineering**: configurei a IA para assumir o papel de analista de suporte e exigi que a saída fosse *estritamente* um objeto JSON com chaves e valores pré-definidos (ex: prioridades e setores baseados nos Enums do sistema). Isso garantiu que o código Java conseguisse desserializar a resposta de forma previsível, sem quebrar a aplicação.
 
-## 4. Dificuldades Encontradas e Aprendizados
+## 4. Front-end Básico (Bônus)
+Para demonstrar domínio full-stack e melhorar a usabilidade do teste, desenvolvi uma interface simples utilizando React e Vite. Aproveitando minha vivência desenvolvendo projetos com back-end em Java Spring e front-end em React, adaptei os conceitos de consumo de API e componentização para o React de forma bem natural. 
+Optei por usar a API nativa `fetch` do JavaScript, mantendo o projeto leve. A principal barreira aqui foi o clássico erro de CORS ao tentar comunicar o front (na porta 5173) com o back (na porta 8080), o qual resolvi rapidamente adicionando a anotação `@CrossOrigin` no `ChamadoController`.
+
+## 5. Dificuldades Encontradas e Aprendizados
 Durante o desenvolvimento com o auxílio de IA, enfrentei alguns obstáculos que foram ótimas oportunidades de aprendizado:
 
 * **Mapeamento de Enums:** Em determinado momento, criei o arquivo de `Prioridade` como uma `class` normal em vez de `enum`. Isso gerou um erro de contexto estático (`Non-static field cannot be referenced`) ao tentar acessá-lo no Service. Percebi o erro, converti para `enum` e entendi como o Java trata essas constantes por baixo dos panos.
